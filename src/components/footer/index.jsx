@@ -30,7 +30,7 @@ export default function Footer({lang}) {
           <ul className="text-white font-normal">
             <li className="font-light pb-2"><a href={ lang_route + "/account"}>{(lang === "en") ? "Self Service" : "En libre service"}</a></li>
             <li className="font-light pb-2">{(lang === "en") ? "Chat" : "Bavarder"}</li>
-            <li className="font-light pb-2">{(lang === "en") ? "About" : "À proppos de nous"}</li>
+            <li className="font-light pb-2"><a href={ lang_route + "/about"}>{(lang === "en") ? "About" : "À proppos de nous"}</a></li>
             <li className="font-light pb-2">FAQ</li>
           </ul>
         </div>

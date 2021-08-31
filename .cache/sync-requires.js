@@ -7,6 +7,7 @@ exports.components = {
   "component---cache-dev-404-page-js": preferDefault(require("/Users/raghavshrivastav/Desktop/Canfone_Website_Gatsby/Website-Gatsby/.cache/dev-404-page.js")),
   "component---src-pages-404-fr-js": preferDefault(require("/Users/raghavshrivastav/Desktop/Canfone_Website_Gatsby/Website-Gatsby/src/pages/404.fr.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/raghavshrivastav/Desktop/Canfone_Website_Gatsby/Website-Gatsby/src/pages/404.js")),
+  "component---src-pages-about-js": preferDefault(require("/Users/raghavshrivastav/Desktop/Canfone_Website_Gatsby/Website-Gatsby/src/pages/about.js")),
   "component---src-pages-account-fr-js": preferDefault(require("/Users/raghavshrivastav/Desktop/Canfone_Website_Gatsby/Website-Gatsby/src/pages/account.fr.js")),
   "component---src-pages-account-js": preferDefault(require("/Users/raghavshrivastav/Desktop/Canfone_Website_Gatsby/Website-Gatsby/src/pages/account.js")),
   "component---src-pages-business-services-js": preferDefault(require("/Users/raghavshrivastav/Desktop/Canfone_Website_Gatsby/Website-Gatsby/src/pages/business-services.js")),
