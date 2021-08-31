@@ -34,6 +34,7 @@ export default function Header({ children, title, lang }) {
             <a href={ lang_route + "/internet"} className="next-page-link top-nav-inactive uppercase block mx-5 lg:inline-block lg:mt-0 text-gray-100 cursor-pointer" data-next-page="internet">{ (lang === "en") ? "Internet":"L'Internet"}</a>
             <a href={ lang_route + "/tv"} className="next-page-link top-nav-inactive uppercase block mx-5 lg:inline-block lg:mt-0 text-gray-100 cursor-pointer" data-next-page="tv">{(lang === "en") ? "TV":"La Télé"}</a>
             <a href={ lang_route + "/phone"} className="next-page-link top-nav-inactive uppercase block mx-5 lg:inline-block lg:mt-0 text-gray-100 cursor-pointer" data-next-page="phone">{(lang === "en") ? "Phone" : "Téléphone"}</a>
+            <a href={ lang_route + "/business-services"} className="next-page-link top-nav-inactive uppercase block mx-5 lg:inline-block lg:mt-0 text-gray-100 cursor-pointer" data-next-page="phone">{(lang === "en") ? "Business Services" : "Produits Commerciaux"}</a>
             <a href={ lang_route + "/account"} className="next-page-link top-nav-inactive uppercase block mx-5 lg:inline-block lg:mt-0 text-gray-100 cursor-pointer" data-next-page="account">{(lang === "en") ? "Account" : "Compte"}</a>
           </div>
         </div>
