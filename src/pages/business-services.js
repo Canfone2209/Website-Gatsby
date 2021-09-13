@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../layouts"
 import { withPrefix, graphql } from "gatsby"
-import Phone from "../layouts/Phone"
+import BusinessServices from "../layouts/BusinessServices"
 import { Helmet } from "react-helmet"
 import "../components/shop"
 
-export default function BusinessServices({ data }) {
+export default function businessServices({ data }) {
   return (
     <div className="">
       <div className="">
@@ -36,7 +36,9 @@ export default function BusinessServices({ data }) {
             src={withPrefix("js/base.js")}
           ></script>
         </Helmet>
-        <Layout title={data.site.siteMetadata.title} lang="en"></Layout>
+        <Layout title={data.site.siteMetadata.title} lang="en">
+          <BusinessServices business={data.allPrismicBusinessservices} />
+        </Layout>
       </div>
     </div>
   )
@@ -50,42 +52,15 @@ export const query = graphql`
         description
       }
     }
-    allPrismicHomeP(
-      filter: { lang: { eq: "en-us" }, tags: { in: "business services" } }
-    ) {
-      edges {
-        node {
-          data {
-            section {
-              title_desc
-              sub_title {
-                text
-              }
-              section_hero {
-                url
-              }
-              section_desc
-              section_content {
-                text
-              }
-              main_title {
-                text
-              }
+    allPrismicBusinessservices {
+      nodes {
+        data {
+          business_group {
+            business_desc {
+              text
             }
-            intro_content {
-              start_price
-              intro_title {
-                text
-              }
-              intro_subtitle {
-                text
-              }
-              intro_desc_lists {
-                text
-              }
-              img_intro_hero {
-                url
-              }
+            business_title {
+              text
             }
           }
         }

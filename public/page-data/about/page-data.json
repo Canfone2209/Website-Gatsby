@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-about-js",
     "path": "/about/",
-    "result": {"pageContext":{"slug":"/about/","langKey":"en"}},
+    "result": {"data":{"site":{"siteMetadata":{"title":"Canfone Gatsby","description":"Canfone for Gatsby version."}},"allPrismicAbout":{"edges":[{"node":{"data":{"desc":{"text":"Know more about CANFONE - halohalohalohalohalohalohalohalo"},"image":{"alt":null},"title":{"text":"About"}}}}]}},"pageContext":{"slug":"/about/","langKey":"en"}},
     "staticQueryHashes": []}

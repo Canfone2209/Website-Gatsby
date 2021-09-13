@@ -4777,7 +4777,8 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-source-prismic/gatsby-ssr */ "./node_modules/gatsby-source-prismic/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "repositoryName": "canfone-gatsby",
+    "repositoryName": "Canfone-Gatsby",
+    "accessToken": "MC5ZVHVyV0JVQUFDVUF4T2w4.De-_vQ7vv71qH--_ve-_ve-_ve-_ve-_vVdN77-977-9b--_ve-_ve-_ve-_vSPvv71adVDvv70O77-9TwsNcg",
     "lang": "*",
     "schemas": {
       "homepage": {
@@ -4923,6 +4924,63 @@ var plugins = [{
                 }
               },
               "label": "TOS content group"
+            }
+          }
+        }
+      },
+      "about": {
+        "Main": {
+          "title": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label": "title",
+              "placeholder": "title"
+            }
+          },
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 50,
+                "height": 50
+              },
+              "thumbnails": [],
+              "label": "image"
+            }
+          },
+          "desc": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+              "label": "desc",
+              "placeholder": "description"
+            }
+          }
+        }
+      },
+      "business_services": {
+        "Main": {
+          "business_group": {
+            "type": "Group",
+            "config": {
+              "fields": {
+                "business_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                    "label": "business_title"
+                  }
+                },
+                "business_desc": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                    "label": "business_desc"
+                  }
+                }
+              },
+              "label": "business_group"
             }
           }
         }

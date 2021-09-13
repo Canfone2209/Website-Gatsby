@@ -3,7 +3,11 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-const path = require('path')
+
+require("dotenv").config({
+  path: `.env`,
+})
+const path = require("path")
 
 module.exports = {
   /* Your site config here */
@@ -13,7 +17,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-postcss`,
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
@@ -21,30 +25,33 @@ module.exports = {
     {
       resolve: `gatsby-plugin-i18n`,
       options: {
-        langKeyDefault: 'en',
-        langKeyForNull: 'en',
+        langKeyDefault: "en",
+        langKeyForNull: "en",
         prefixDefault: false,
         useLangKeyLayout: false,
       },
     },
     {
-      resolve: 'gatsby-source-prismic',
+      resolve: "gatsby-source-prismic",
       options: {
-        repositoryName: 'canfone-gatsby',
-        lang: '*',
+        repositoryName: "Canfone-Gatsby",
+        accessToken: process.env.PRISMIC_ACCESS_TOKEN,
+        lang: "*",
         schemas: {
-           homepage: require("./custom_types/home_p.json"),
-           order_confirm: require("./custom_types/order_confirm.json"),
-           tos: require("./custom_types/tos.json"),
+          homepage: require("./custom_types/home_p.json"),
+          order_confirm: require("./custom_types/order_confirm.json"),
+          tos: require("./custom_types/tos.json"),
+          about: require("./custom_types/about.json"),
+          business_services: require("./custom_types/business_services.json"),
         },
       },
     },
     {
       resolve: `gatsby-plugin-resolve-src`,
       oprions: {
-        src: path.resolve(__dirname, 'src'),
-        utils: path.resolve(__dirname, 'utils'),
-      }
+        src: path.resolve(__dirname, "src"),
+        utils: path.resolve(__dirname, "utils"),
+      },
     },
     // {
     //   resolve: `gatsby-source-filesystem`,
@@ -59,18 +66,18 @@ module.exports = {
         fonts: [
           {
             family: `Open Sans`,
-            variants: [`300`,`400`,`600`,`700`,`800`]
+            variants: [`300`, `400`, `600`, `700`, `800`],
           },
           {
             family: `Roboto`,
-            variants: [`300`,`400`,`500`,`700`,`900`]
+            variants: [`300`, `400`, `500`, `700`, `900`],
           },
           {
             family: `Barlow|Barlow Semi Condensed`,
-            variants: [`300`,`400`,`500`,`700`]
+            variants: [`300`, `400`, `500`, `700`],
           },
         ],
-        display: 'swap'
+        display: "swap",
       },
     },
     // {

@@ -1,24 +1,28 @@
 import React from 'react';
+import PageHeader from '../components/page-header';
+import LandingSection from "components/landing-section"
 
-import {
-    Img__canfone_logo_white
-  } from "../utils/imgloader"
-  
 
-  export default function Account({lang}) {
-
+  export default function About(props) {
+    console.log(props);
     return(
-        <div className="account-login">
-      <div className="login-box mx-auto my-auto">
-        <div className="pt-12 mt-32">
-          <img src={Img__canfone_logo_white} className="mx-auto" alt="" />
+      <div className="header-phone">
+        <div className="">
+
+
         </div>
-        <div className="py-10">
-          <p className="text-base text-white font-light mb-4 text-center">
-            { (lang === "en") ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." : "Gérez vos services Canfone en ligne."}
-          </p>
-        </div>
+        <p>{props.about.data.title.text}</p>
+          <p>{props.about.data.desc.text}</p>
+          {/* <PageHeader
+            title2={intro.intro_title[0].text}
+            title3={intro.intro_subtitle[0].text}
+            serviceType={ (lang === "en") ? "Know more about Canfone" : "En savoir plus sur Canfone"}
+            price={"$" + intro.start_price}
+          /> */}
+
+          {/* <div className="px-4 md:px-8 pt-6 md:pt-16 pb-10 md:pb-24">
+          <LandingSection type={2} section_data={section[0]} />
+        </div> */}
       </div>
-    </div>
     )
   }

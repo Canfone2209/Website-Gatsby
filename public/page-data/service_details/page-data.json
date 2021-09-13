@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-service-details-js",
+    "path": "/service_details/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Canfone Gatsby","description":"Canfone for Gatsby version."}},"allPrismicHomeP":{"edges":[{"node":{"data":{"section":[{"title_desc":null,"sub_title":[],"section_hero":{"url":null},"section_desc":null,"section_content":[],"main_title":[]}],"intro_content":[{"start_price":null,"intro_title":[{"text":"Service Details"}],"intro_subtitle":[{"text":"We're Almost Done!"}],"intro_desc_lists":[{"text":"Let's confirm a few service details before submitting your order."}],"img_intro_hero":{"url":null}}]}}}]}},"pageContext":{"slug":"/service_details/","langKey":"en"}},
+    "staticQueryHashes": []}
