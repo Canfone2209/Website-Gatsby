@@ -11,8 +11,8 @@ export default function BusinessServices ({intro, section, lang, business}) {
 
     
       <PageHeader
-        // title2={intro.intro_title[0].text}
-        // title3={intro.intro_subtitle[0].text}
+        title2={business.nodes[0].data.business_group[0].business_title[0].text}
+        title3={business.nodes[0].data.business_group[0].business_desc[0].text}
         // serviceType={ (lang === "en") ? "Loren Epsum consectetur adipiscing elit" : "Bienvenue à Paris"}
         // price={"$" + intro.start_price}
       />
@@ -25,8 +25,6 @@ export default function BusinessServices ({intro, section, lang, business}) {
     <div className="px-4 md:px-8 pt-6 md:pt-16 pb-10 md:pb-24">
       {/* <LandingSection type={2} section_data={section[0]} /> */}
     <div className="">
-
-      <h1>{business.nodes[0].data.business_group[0].business_title[0].text}</h1>
     
     
     <h2>{business.nodes[0].data.business_group[0].business_desc[0].text}</h2>
