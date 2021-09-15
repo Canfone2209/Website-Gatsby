@@ -13,7 +13,7 @@ export default function businessServices({ data }) {
           <link
             rel="stylesheet"
             type="text/css"
-            href="https://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=JH73-CY14-ZK13-GG77"
+            // href="https://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=JH73-CY14-ZK13-GG77"
           />
 
           <script
@@ -37,7 +37,10 @@ export default function businessServices({ data }) {
           ></script>
         </Helmet>
         <Layout title={data.site.siteMetadata.title} lang="en">
-          <BusinessServices business={data.allPrismicBusinessservices} />
+          <BusinessServices
+            business={data.allPrismicBusinessservices}
+            lang="en"
+          />
         </Layout>
       </div>
     </div>

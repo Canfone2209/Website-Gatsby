@@ -10,7 +10,7 @@ export default function FAChat({lang}) {
     <div className="md:hidden flex items-end bg-canfone-red py-5">
       <div className="flex-1">
         <h2 className="text-xl md:text-2xl ml-4 mr-6 md:ml-20 text-white font-light">
-          { (lang === "en") ? "Get Canfone Now." : "Obtenez Canfone maintenant."}
+          { (lang === "en") ? "Get Canfone Services Now." : "Obtenez Canfone maintenant."}
         </h2>
         <h2 className="flex-1 text-xl md:text-2xl ml-4 mr-6 md:ml-20 text-white font-bold">{ (lang === "en") ? "Call" : "Appelez"} 1-866-857-3140</h2>
       </div>
@@ -20,7 +20,7 @@ export default function FAChat({lang}) {
     </div>
 
     <div className="hidden md:flex bg-canfone-red py-5">
-      <h2 className="flex-1 text-xl md:text-2xl ml-4 mr-6 md:ml-20 text-white font-light">Get Canfone Now. <span className="font-bold">{ (lang === "en") ? "Call" : "Appelez"} 1-866-857-3140</span></h2>
+      <h2 className="flex-1 text-xl md:text-2xl ml-4 mr-6 md:ml-20 text-white font-light">Get Canfone Services Now. <span className="font-bold">{ (lang === "en") ? "Call" : "Appelez"} 1-866-857-3140</span></h2>
       <button className="barlow-button-grey text-white mr-4 md:mr-12 py-1 px-3 md:px-4 rounded-full">
         <FontAwesomeIcon icon={faComment} className="mr-2" />{ (lang === "en") ? "Chat" : "Bavarder"} 
       </button>
